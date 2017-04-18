@@ -9,7 +9,8 @@ const DataGridDefaultCellRenderer = ({ data, dataField, className }) => {
 
 DataGridDefaultCellRenderer.propTypes = {
   data: PropTypes.string,
-  className: PropTypes.string
+  className: PropTypes.string,
+  dataField: PropTypes.string
 };
 
 export default DataGridDefaultCellRenderer;

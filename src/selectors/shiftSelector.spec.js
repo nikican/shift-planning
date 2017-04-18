@@ -46,5 +46,5 @@ describe('shiftSelector', () => {
     const shiftData = shiftSelector.getShiftData(state);
 
     expect(expectedShiftData).toEqual(shiftData);
-  })
+  });
 });
