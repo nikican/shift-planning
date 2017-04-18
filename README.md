@@ -1,7 +1,7 @@
 
 1. **Run the install**. `npm install`
 2. **Run the app in development mode**. `npm start -s`
-3. **Run the app in production mode**. 'npm run build'
+3. **Run the app in production mode**. `npm run build`
 
 Server APIs rarely serve data which is automatically fit for view layer of the app.
 Taking that into account I've created [mock data](/src/api/mockShiftApi.js) using guideline about relations among 3 given entities and
