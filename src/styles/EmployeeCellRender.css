@@ -1,0 +1,18 @@
+.employeeCellRender{
+  padding: 5px;
+}
+
+.avatar{
+  float: left;
+  heigh:32;
+  width: 32;
+}
+
+.employeeName{
+  padding-left: 40px;
+}
+
+.position{
+  padding-left: 40px;
+  font-size: 12px;
+}

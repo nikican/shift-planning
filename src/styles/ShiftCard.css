@@ -1,0 +1,13 @@
+.shiftCard{
+  margin: 5px;
+  padding: 5px;
+  color: white;
+}
+
+.title{
+  font-weight: bold;
+}
+
+.duration{
+  font-weight: bold;
+}
