@@ -214,7 +214,7 @@ const shifts = [
 
 const delay = 1000;
 
-class CourseApi {
+class ShiftApi {
   static fetchShifts(date) {
     return new Promise((resolve) => {
       setTimeout(() => {
@@ -235,4 +235,4 @@ class CourseApi {
   }
 }
 
-export default CourseApi;
+export default ShiftApi;
