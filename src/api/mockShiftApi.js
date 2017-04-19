@@ -46,6 +46,35 @@ const shifts = [
     "startDateSimple": "2017-04-19",
     "startDate": 1492601938658,
     "id": "58f532bfac71bb920c1b5131"
+  }, {
+    "displayName": "Manager's shift",
+    "name": "Manager's shift",
+    "employees": [
+      {
+        "displayName": "Valerie Dejesus",
+        "position": {
+          "displayName": "Manager",
+          "name": "Manager",
+          "color": "#6495ED",
+          "id": "58f69a7269e3c60f6f4d1efd"
+        },
+        "lastName": "Dejesus",
+        "firstName": "Valerie",
+        "avatar": "http://placehold.it/32x32",
+        "id": "58f532bf817816fe0f561340"
+      }
+    ],
+    "position": {
+      "displayName": "Manager",
+      "name": "Manager",
+      "color": "#6495ED",
+      "id": "58f69a7269e3c60f6f4d1efd"
+    },
+    "endDateSimple": "2017-04-19",
+    "endDate": 1492801938658,
+    "startDateSimple": "2017-04-19",
+    "startDate": 1492601938658,
+    "id": "58f532bfe3ed008e18ef2bb4"
   },
   {
     "endDateSimple": "2017-04-17",
@@ -124,7 +153,7 @@ const shifts = [
     "displayName": "Waiter's shift 4",
     "name": "Waiter's shift 4",
     "endDateSimple": "2017-04-13",
-    "endDate": 1492056388799,
+    "endDate": 1492067388799,
     "startDateSimple": "2017-04-13",
     "startDate": 1492056388799,
     "id": "58f53d3b2a67c97a49cca180",
@@ -154,7 +183,7 @@ const shifts = [
     "displayName": "Waiter's shift 5",
     "name": "Waiter's shift 5",
     "endDateSimple": "2017-04-25",
-    "endDate": 1492689962970,
+    "endDate": 1493339962970,
     "startDateSimple": "2017-04-25",
     "startDate": 1493126563631,
     "id": "58f53dcb3f659514555333e4",
