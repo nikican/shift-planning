@@ -24,10 +24,9 @@ App.defaultProps = {
   isLoading: false
 };
 
-function mapStateToProps(state) {
-  return {
-    isLoading: state.isLoading
-  };
-}
+const mapStateToProps = (state) => ({
+  isLoading: state.isLoading
+});
+
 
 export default connect(mapStateToProps)(App);
