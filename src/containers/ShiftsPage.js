@@ -15,7 +15,9 @@ class ShiftsPage extends Component {
   }
 
   componentWillMount() {
-    this.props.requestShifts(this.props.date);
+    if (dateUtil.isValid(this.props.date)) {
+      this.props.requestShifts(this.props.date);
+    }
   }
 
   componentWillUpdate(nextProps) {

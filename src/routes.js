@@ -1,11 +1,12 @@
 import React from 'react';
-import { Route, IndexRoute, IndexRedirect } from 'react-router';
+import { Route, IndexRoute, IndexRedirect, Redirect } from 'react-router';
 
 import App from './containers/App';
 import HomePage from './components/home/HomePage';
 import AboutPage from './components/about/AboutPage';
 import ShiftsPage from './containers/ShiftsPage';
 import NotFoundPage from './components/notFound/NotFoundPage';
+// import ValidRoute from './components/ValidRoute';
 import * as dateUtil from '../src/utils/dateUtil';
 
 export default (
@@ -14,9 +15,15 @@ export default (
     <Route path="shifts">
       {/*redirect '/shifts' route to route '/shifts/*todays date*' making parameter ":date"" available to interested components*/}
       <IndexRedirect to={dateUtil.getTodaysDate()} />
-      <Route path=":date" component={ShiftsPage} />
+      <Route path=":date" component={ShiftsPage} onEnter={(nextState, replace) => validateDateParam(nextState, replace)} />
     </Route>
     <Route path="about" component={AboutPage} />
     <Route path="*" component={NotFoundPage} />
   </Route>
 );
+
+const validateDateParam = (nextState, replace) => {
+  if (!dateUtil.isValid(nextState.params.date)) {
+    replace(`/shifts/${dateUtil.getTodaysDate()}`);
+  }
+};
