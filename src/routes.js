@@ -6,7 +6,6 @@ import HomePage from './components/home/HomePage';
 import AboutPage from './components/about/AboutPage';
 import ShiftsPage from './containers/ShiftsPage';
 import NotFoundPage from './components/notFound/NotFoundPage';
-// import ValidRoute from './components/ValidRoute';
 import * as dateUtil from '../src/utils/dateUtil';
 
 export default (
