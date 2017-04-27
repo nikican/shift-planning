@@ -1,6 +1,6 @@
 import { schema } from 'normalizr';
 
-//employee will get array of shift ids to which he belongs
+//employee will get array of ids of shifts to which he belongs
 const employeeProcessStrategy = (value, parent) => ({
   ...value, shifts: [parent.id]
 });
