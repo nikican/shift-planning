@@ -42,9 +42,11 @@ export const isValid = (date) => {
   return moment(date, simpleDateFormat, true).isValid();
 };
 
-export const getDateDifferenceInHours = (firstDate, secondDate) => {
-  return moment(firstDate).diff(moment(secondDate), 'hours');
+export const getDateDifference = (firstDate, secondDate) => {
+  return moment(firstDate).diff(moment(secondDate));
 };
 
-
+export const getHumanizedDateDifference = (firstDate, secondDate) => {
+  return moment.duration(getDateDifference(firstDate, secondDate)).humanize();
+}
 

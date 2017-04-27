@@ -35,7 +35,7 @@ export const getShiftData = createSelector(
           ...shift,
           positionName: positions[shift.position].displayName,
           positionColor: positions[shift.position].color,
-          duration: dateUtil.getDateDifferenceInHours(shift.endDate, shift.startDate) + " hr"
+          duration: dateUtil.getHumanizedDateDifference(shift.endDate, shift.startDate)
         };
 
         employeesShifts.push(employeesShift);
@@ -50,7 +50,7 @@ export const getShiftData = createSelector(
         positionColor: positions[employee.position].color,
       });
     });
-    // console.log(shiftData);
+
     return shiftData;
   }
 );
