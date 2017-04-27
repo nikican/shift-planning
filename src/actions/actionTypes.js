@@ -1,4 +1,4 @@
-export const BEGIN_AJAX_CALL = 'BEGIN_AJAX_CALL';
+export const BEGIN_FETCHING = 'BEGIN_FETCHING';
 
 export const LOAD_SHIFTS = 'LOAD_SHIFTS';
 export const LOAD_SHIFTS_SUCCESS = 'LOAD_SHIFTS_SUCCESS';

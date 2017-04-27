@@ -2,7 +2,7 @@ import { normalize } from 'normalizr';
 
 import * as types from './actionTypes';
 import shiftApi from '../api/mockShiftApi';
-import { beginAjaxCall } from './ajaxStatusActions';
+import { beginFetching } from './fetchStatusActions';
 import * as shiftSchema from './shiftSchema';
 import { getIsLoading } from '../reducers';
 
@@ -21,7 +21,7 @@ export const requestShifts = (date) => (dispatch, getState) => {
     return Promise.resolve;
   }
 
-  dispatch(beginAjaxCall());
+  dispatch(beginFetching());
 
   return shiftApi.fetchShifts(date).then((response) => {
     //dispatch with normalized response data

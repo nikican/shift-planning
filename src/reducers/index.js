@@ -2,7 +2,7 @@ import { combineReducers } from 'redux';
 import { routerReducer } from 'react-router-redux';
 
 import shifts from './shiftReducer';
-import isLoading from './ajaxStatusReducer';
+import isLoading from './fetchStatusReducer';
 
 const rootReducer = combineReducers({
   shifts,
