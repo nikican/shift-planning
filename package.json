@@ -29,7 +29,7 @@
   "author": "Nikica Novakovic",
   "license": "MIT",
   "dependencies": {
-    "bootstrap": "3.3.7",
+    "bootstrap": "3.4.1",
     "classnames": "2.2.5",
     "moment": "2.27.0",
     "normalize.css": "6.0.0",
